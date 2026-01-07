@@ -46,7 +46,9 @@ class Animal:
         self.name = name
 
         #Encapsulation is about protecting data inside of a class
-#We can make private properties using a __ prefix
+        #We can make private properties using a __ prefix
+        #note that we can make protected attributes using _ prefix, but Python does not enforce any rules around this
+        #it is just convention for devs to understand
         self.__age = age
 
     #To modify a private property, we need getter/setter methods
