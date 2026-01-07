@@ -1,8 +1,28 @@
 print("Hello, World!")
 
+#Datatypes - implicitly defined typically
+#We can explicitly declare a data type, 
+
+#Num
+    #Int - integer whole numbers
+    #Float - floating point numbers (AKA Decimals)
 x = 5
+fl = 3.5
+explicitInt:int = 13
+
+#Boolean - true/false
+MyBool = True
+    #be aware of truthy/falsy values (non true/false values that can be evaluated to true/false)
+    #Falsy values - False, None, 0, 0.0, 0j, "", empty collections(lists, tuples, sets, dictionaries, etc.)
+    #Truthy values - everything else
+
+#String - strings of characters
+
 MyString = "This is my string!"
 MySingleQuoteString = 'this is also a valid string'
+
+#Nonetype - represents a null value or absence of a value
+MyNullValue = None
 
 #by default, the print function ends with a new line
 print(x)
@@ -27,10 +47,14 @@ z="Paul"
 
 print(z)
 
-#Casting lets us specify the data type of a variable
+#Casting lets us specify the data type of a variable and perform type conversion
+#be careful about conversion and data loss (converting to an int from a float drops the decimals)
 a = str(9) #a will be '9'
 b = int(9) #b will be 9
 c = float(9) #c will be 9.0
+
+d = float(a + b + c)
+print(d)
 
 #the type() function will return the data type of a variable
 print(type(a))
@@ -166,6 +190,8 @@ print("Cherry" + "Pie")
 
 print("Plese enter your name")
 name = input()
+
+#f stands for formatted string to paramaterize the string
 print(f"Hello {name}")
 
 color = input(f"What is your favorite color, {name}?")
