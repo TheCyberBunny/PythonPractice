@@ -19,7 +19,7 @@ bark()
 #Putting strings instead of integers will output strings
 print(addition_function("Purple", "Green"))
 
-#Scopes
+#Scopes aka Namespaces
 # are of the code where an object/variable/function can be called upon and used
 
 #Local: variables declared inside a block of code are only available inside that block
