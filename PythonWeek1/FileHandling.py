@@ -52,6 +52,8 @@ with open('./PythonWeek1/resources/myPokemonTeam.txt', "r") as teamFile:
     print(teamFile.read())
 
 #To delete a file, we need to import the OS module
+#although not required, it's good practice to check if the file exists before attempting to delete it
 import os
-os.remove('./PythonWeek1/resources/myNewFile.txt')
-print("File deleted successfully.")
+if os.path.exists('./PythonWeek1/resources/myNewFile.txt'):
+    os.remove('./PythonWeek1/resources/myNewFile.txt')
+    print("File deleted successfully.")
