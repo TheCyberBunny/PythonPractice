@@ -48,3 +48,7 @@ CALL get_course_count_({student_id});
 """
 course_count_df = pd.read_sql(course_count_sql, engine)
 print(course_count_df)
+
+
+#we always want to close our engine when we're done
+connection.close()
